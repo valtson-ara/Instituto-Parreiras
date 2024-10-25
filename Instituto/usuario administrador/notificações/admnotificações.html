@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Fundação de Saúde Psrreiras Horta</title>
+    <link rel="stylesheet" href="admnotificações.css">
+</head>
+<body>
+  <div class="logo">
+    <img src="FSPH Logo.jpg" alt="FSPH Logo", 200px>
+    <img src="Sergipe Logo.jpg" alt="Sergipe Logo", 300px>
+</div>
+  <header class="top-bar">
+    <nav>
+        <ul>
+            <li><a href="inicioadministrador.css" >Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Não Conformidades</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Relatórios/Estatísticas</a></li>
+            <li><a href="#">Notificações</a></li>
+        </ul>
+    </nav>
+    <div id="mobile_menu">
+        <ul id="mobile_nav_list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Não Conformidades</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Relatórios/Estatísticas</a></li>
+            <li><a href="#">Notificações</a></li>
+        </ul>
+    </div>
+    <button class="btn-menu" id="mobile_btn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    <div class="admin">
+        <button class="btn-login" onclick="window.location.href=''"><img src="profile-user.png" alt="usuario" width="30" height="30"></button>
+        <span>Olá, administrador</span>
+    </div>
+</header>
+
+<section class="welcome-section">
+    <h1>Notificações/Alertas</h1>
+</section>
+
+    <div class="notificacao-container">
+        <!-- Caixa de Prioridade Alta -->
+        <div class="box-prioridade">
+            <h3>Prioridade Alta</h3>
+            <form>
+                <label for="notificacao-alta">Notificação ou alerta:</label>
+                <input type="text" id="notificacao-alta" name="notificacao-alta">
+
+                <label for="data-alta">Data e hora:</label>
+                <input type="datetime-local" id="data-alta" name="data-alta">
+
+                <label for="descricao-alta">Descrição:</label>
+                <textarea id="descricao-alta" name="descricao-alta" maxlength="250" placeholder="Digite sua mensagem aqui, em até 250 caracteres"></textarea>
+
+                <div class="status">
+                    <input type="checkbox" id="lida-alta" name="lida-alta">
+                    <label for="lida-alta">Lida</label>
+
+                    <input type="checkbox" id="nao-lida-alta" name="nao-lida-alta">
+                    <label for="nao-lida-alta">Não Lida</label>
+                </div>
+                <br>
+                <br>
+            </form>
+        </div>
+
+        <!-- Caixa de Prioridade Média -->
+        <div class="box-prioridade">
+            <h3>Prioridade Média</h3>
+            <form>
+                <label for="acao-correta">Ação corretiva:</label>
+                <input type="text" id="acao-correta" name="acao-correta">
+
+                <label for="data-media">Data e hora:</label>
+                <input type="datetime-local" id="data-media" name="data-media">
+
+                <label for="descricao-media">Descrição:</label>
+                <textarea id="descricao-media" name="descricao-media" maxlength="250" placeholder="Digite sua mensagem aqui, em até 250 caracteres"></textarea>
+
+                <div class="status">
+                    <input type="checkbox" id="lida-media" name="lida-media">
+                    <label for="lida-media">Lida</label>
+
+                    <input type="checkbox" id="nao-lida-media" name="nao-lida-media">
+                    <label for="nao-lida-media">Não Lida</label>
+                </div>
+                <br>
+                <br>
+            </form>
+        </div>
+
+        <!-- Linha vertical de separação -->
+        <div class="linha-vertical"></div>
+
+        <!-- Caixa de Preferência de Notificações -->
+        <div class="box-preferencia">
+            <h3>Preferência de notificações</h3>
+            <form>
+                <label for="email">Caso queira receber as notificações e alertas pelo seu e-mail, insira-o abaixo:</label>
+                <input type="email" id="email" name="email" placeholder="Seu e-mail">
+
+                <label>Marque abaixo a sua preferência de notificações:</label>
+                <br>
+                <label>Tipo de notificações:</label>
+                <br>
+                <input type="radio" id="novas" name="tipo-notificacao" value="novas">
+                <label for="novas">Novas não conformidades</label><br>
+                <input type="radio" id="atualizacoes" name="tipo-notificacao" value="atualizacoes">
+                <label for="atualizacoes">Atualizações de status</label><br>
+                <input type="radio" id="alertas" name="tipo-notificacao" value="alertas">
+                <label for="alertas">Alertas</label>
+                <br>
+                <br>
+                <label>Frequência das notificações:</label>
+                <br>
+                <br>
+                <input type="radio" id="imediata" name="frequencia" value="imediata">
+                <label for="imediata">Imediata</label><br>
+                <input type="radio" id="diaria" name="frequencia" value="diaria">
+                <label for="diaria">Diária</label><br>
+                <input type="radio" id="mensal" name="frequencia" value="mensal">
+                <label for="mensal">Mensal</label>
+                <br>
+                <br>
+                <label>Canais de notificação:</label>
+                <br>
+                <br>
+                <input type="radio" id="site" name="canal" value="site">
+                <label for="site">Site</label><br>
+                <input type="radio" id="email-canal" name="canal" value="email">
+                <label for="email-canal">E-mail</label><br>
+                <input type="radio" id="ambos" name="canal" value="ambos">
+                <label for="ambos">Ambos</label>
+                <br>
+                <br>
+                <label>Nível de prioridade:</label>
+                <br>
+                <br>
+                <input type="radio" id="alta" name="prioridade" value="alta">
+                <label for="alta">Alta</label><br>
+                <input type="radio" id="media" name="prioridade" value="media">
+                <label for="media">Média</label><br>
+                <input type="radio" id="baixa" name="prioridade" value="baixa">
+                <label for="baixa">Baixa</label>
+            </form>
+        </div>
+    </div>
+
+<footer>
+    <p id="fim">&copy; 2024 Fundação de Saúde Parreiras Horta. Todos os direitos reservados.</p>
+    <div class="contacts">
+        <p><a href="https://fsph.se.gov.br" style="color: #42b5ea;">ssocial.hemose@fsph.se.gov.br</a></p>
+        <p><a href="https://fsph.se.gov.br/index.php/ouvidoria/" style="color:#42b5ea" >ouvidoria.fsph@fsph.se.gov.br</a></p>
+        </div>
+    </div>
+</footer>
+<script src="inicioadministrador.js"></script>
+</body>
+</html>
