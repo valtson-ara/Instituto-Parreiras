@@ -1,0 +1,59 @@
+{
+  "tipos_nao_conformidades": [
+    {
+      "id": "1",
+      "nome": "apartamento"
+    },
+    {
+      "id": "430a",
+      "nome": "A fazenda bonita"
+    },
+    {
+      "id": "8b2b",
+      "nome": "Celular ruim"
+    }
+  ],
+  "status_nao_conformidades": [
+    {
+      "id": "1",
+      "nome": "Pendente"
+    },
+    {
+      "id": "e52e",
+      "nome": "pendente"
+    },
+    {
+      "id": "eb2b",
+      "nome": "pendente"
+    }
+  ],
+  "nao_conformidades": [
+    {
+      "id": "1",
+      "assunto": "apartamento",
+      "descricao": "O aprtamento não está a venda",
+      "data_abertura": "20/10/2024",
+      "origem_nao_conformidade": "site",
+      "tipo_nao_conformidade_id": 1,
+      "status_id": 1
+    },
+    {
+      "id": "3d46",
+      "assunto": "A fazenda bonita",
+      "descricao": "A fazenda está muito bela!",
+      "data_abertura": "24/10/2024",
+      "origem_nao_conformidade": "fazenda",
+      "tipo_nao_conformidade_id": "430a",
+      "status_id": "e52e"
+    },
+    {
+      "id": "48f3",
+      "assunto": "Celular ruim",
+      "descricao": "O meu celular está muito ruim!",
+      "data_abertura": "24/10/2024",
+      "origem_nao_conformidade": "celular",
+      "tipo_nao_conformidade_id": "8b2b",
+      "status_id": "eb2b"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "tipos_nao_conformidades": [
+    {
+      "id": "1",
+      "nome": "apartamento"
+    },
+    {
+      "id": "15bc",
+      "nome": "Estacionamento"
+    },
+    {
+      "id": "738b",
+      "nome": "O carro morreu"
+    },
+    {
+      "id": "5736",
+      "nome": "O lucro da oficina"
+    }
+  ],
+  "status_nao_conformidades": [
+    {
+      "id": "1",
+      "nome": "Pendente"
+    },
+    {
+      "id": "de5e",
+      "nome": "pendente"
+    },
+    {
+      "id": "bc49",
+      "nome": "pendente"
+    },
+    {
+      "id": "5dce",
+      "nome": "pendente"
+    }
+  ],
+  "nao_conformidades": [
+    {
+      "id": "1",
+      "assunto": "apartamento",
+      "descricao": "O aprtamento não está a venda",
+      "data_abertura": "20/10/2024",
+      "origem_nao_conformidade": "site",
+      "tipo_nao_conformidade_id": 1,
+      "status_id": 1
+    },
+    {
+      "id": "3587",
+      "assunto": "Estacionamento",
+      "descricao": "preciso de outro estacionamento",
+      "data_abertura": "20/10/2024",
+      "origem_nao_conformidade": "O meu novo estacionamento",
+      "tipo_nao_conformidade_id": "15bc",
+      "status_id": "de5e"
+    },
+    {
+      "id": "76f4",
+      "assunto": "O carro morreu",
+      "descricao": "O carro não funciona mais",
+      "data_abertura": "22/10/2024",
+      "origem_nao_conformidade": "carro",
+      "tipo_nao_conformidade_id": "738b",
+      "status_id": "bc49"
+    },
+    {
+      "id": "dea7",
+      "assunto": "O lucro da oficina",
+      "descricao": "A oficina está dando muito lucro!",
+      "data_abertura": "22/10/2024",
+      "origem_nao_conformidade": "oficina",
+      "tipo_nao_conformidade_id": "5736",
+      "status_id": "5dce"
+    }
+  ]
+}

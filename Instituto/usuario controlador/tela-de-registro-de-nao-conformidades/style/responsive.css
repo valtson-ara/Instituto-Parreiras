@@ -1,0 +1,72 @@
+/* estilização para a responsividade dos elementos */
+/* estilização para até 1000px */
+@media (max-width: 1000px) {
+    
+    nav img {
+        height: auto;
+        width: 3vw;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    #list-contacts {
+        position: static;
+    }
+
+    .footer-main {
+        background-color: #979797;
+        width: 100vw;
+        min-height: 5.2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* estilização para até 600px */
+@media (max-width: 600px) {
+    .logo-empresa {
+        height: auto;
+        width: 25vw;
+    }
+}
+
+/* estilização para até 500px */
+@media (max-width: 500px) {
+    .logo-empresa {
+        height: auto;
+        width: 32vw;
+    }
+
+    nav img {
+        height: auto;
+        width: 5vw;
+    }
+}
+
+/* estilização para até 350px */
+@media (max-width: 350px) {
+   header {
+    height: 32vh;
+   }
+}
+
+/* estilização para até 300px */
+@media (max-width: 300px) {
+    .logo-empresa {
+        height: auto;
+        width: 35vw;
+    }
+
+    nav img {
+        height: auto;
+        width: 7vw;
+    }
+
+    header {
+        height: 34vh;
+       }
+}
