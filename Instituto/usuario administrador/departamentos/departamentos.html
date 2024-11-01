@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="departamentos.css">
+    <title>Departamentos</title>
+</head>
+<body>
+<div class="logo">
+    <img src="FSPH Logo.jpg" alt="FSPH Logo", 200px>
+    <img src="Sergipe Logo.jpg" alt="Sergipe Logo", 300px>
+</div>
+<header class="top-bar">
+    <nav>
+        <ul>
+            <li><a href="../inicialadm/inicioadministrador.html" >Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Não Conformidades</a></li>
+            <li><a href="departamentos.html">Departamentos</a></li>
+            <li><a href="#">Ações Corretivas</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Relatórios/Estatísticas</a></li>
+            <li><a href="../notificações/admnotificações.html">Notificações</a></li>
+        </ul>
+    </nav>
+    <div id="mobile_menu">
+        <ul id="mobile_nav_list">
+            <li><a href="../inicialadm/inicioadministrador.html">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Não Conformidades</a></li>
+            <li><a href="#">Departamentos</a></li>
+            <li><a href="#">Ações Corretivas</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Relatórios/Estatísticas</a></li>
+        </ul>
+    </div>
+    <button class="btn-menu" id="mobile_btn">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+    <div class="admin">
+        <button class="btn-login" onclick="window.location.href=''"><img src="profile-user.png" alt="usuario" width="30" height="30"></button>
+        <span>Olá, administrador</span>
+    </div>
+</header>
+    
+    <section id="departament-section">
+        <h1>Gestão de Departamentos</h1>
+        <p>Visualize os departamentos da Fundação de Saúde Parreiras Horta (FSPH).</p>
+    </section>
+
+<section id="content-section-1">
+    <h2 id="content-title"><strong>Departamentos registrados</strong></h2>
+
+    <table id="table-1">
+        <tr>
+            <td class="td-vazio"></td>
+            <td class="td-vazio"></td>
+            <td class="td-vazio"></td>
+            <td class="td-vazio"></td>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td class="td-1">Exmeplo de departamento</td>
+            <td class="td-1">Número de não conformidades associadas</td>
+            <td>
+                <button class="btn-table" onclick="window.location.href=''">Editar</button>
+                <button class="btn-table">Excluir</button>
+            </td>
+        </tr>
+        <tr>
+            <td>02</td>
+            <td class="td-2">Exemplo de departamento</td>
+            <td class="td-2">Número de não conformidades associadas</td>
+            <td>
+                <button class="btn-table">Editar</button>
+                <button class="btn-table">Excluir</button>
+            </td>
+        </tr>
+    </table>
+</section>
+
+<section id="content-section-2">
+    <h2><strong>Adicionar novo departamento</strong></h2>
+
+    <p id="nome">Nome:</p>
+    <form>
+        <input type="text" name="input" placeholder="Nome" id="input-nome">
+    </form>
+
+    <p id="descrição">Descrição:</p>
+    <form>
+        <input type="text" name="input" placeholder="Descrição" id="input-descrição">
+    </form>
+
+    <button id="btn-confirm" onclick="window.location.href=''">Enviar</button>
+</section>
+    
+<footer>
+    <p id="fim">&copy; 2024 Fundação de Saúde Parreiras Horta. Todos os direitos reservados.</p>
+    <div class="contacts">
+        <p><a href="https://fsph.se.gov.br" style="color: #42b5ea;">ssocial.hemose@fsph.se.gov.br</a></p>
+        <p><a href="https://fsph.se.gov.br/index.php/ouvidoria/" style="color:#42b5ea" >ouvidoria.fsph@fsph.se.gov.br</a></p>
+        </div>
+    </div>
+</footer>
+<script src="departamentos.js"></script>
+</body>
+</html>
