@@ -22,26 +22,31 @@ body {
   text-align: center;
 }
 
-.top-bar {
+.top-bar { 
   background-color: #979797;
   padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: white;
+  color: rgb(0, 0, 0);
+}
+
+nav {
+  margin-left: auto;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 15px;
+  gap: 30px;
 }
 
 nav ul li a {
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: none;
-  font-weight: bold;
+  margin-left: 1px;
 }
+
 
 .admin {
   font-size: 14px;
@@ -84,18 +89,27 @@ nav ul li a {
 }
 
 footer {
-  background-color: #002f6c;
-  color: white;
-  padding: 10px;
-  text-align: center;
+  background-color: #979797;
+  margin-top: 3.1rem;
+    width: 100%;
+    min-height: 5.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
-.contacts p {
-  margin: 5px 0;
+#list-contacts {
+  position: absolute;
+  right: 1rem;
 }
 
-.footer-p {
-  text-align: center;
+footer li {
+  list-style-type: none;
+  flex-direction: row;
+  font-size: 0.8rem;
 }
 
 .contacts {
@@ -103,7 +117,12 @@ footer {
 }
 
 #fim {
+  font-size: 0.8rem;
   text-align: center;
+}
+.img-fluid {
+  width: 18px;
+  height: auto;
 }
 
 /* Botão de login */
@@ -112,6 +131,7 @@ footer {
   border: none;
   padding: 0;
   cursor: pointer;
+  margin-left: 10px;
 }
 
 .btn-login img {
