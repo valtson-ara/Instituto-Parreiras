@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Fundação de Saúde Psrreiras Horta</title>
+    <link rel="stylesheet" href="status.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="../inicialadm/FSPH Logo.jpg" alt="FSPH Logo">
+        <img src="../inicialadm/Sergipe Logo.jpg" alt="Sergipe Logo">
+    </div>
+    
+    <header class="top-bar">
+        <nav>
+            <ul>
+                <li><a href="../inicialadm/inicioadministrador.html">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Não Conformidades</a></li>
+                <li><a href="#">Departamentos</a></li>
+                <li><a href="#">Ação Corretiva</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Relatórios/Estatísticas</a></li>
+            </ul>
+        </nav>
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li><a href="../inicialadm/inicioadministrador.html" >Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Não Conformidades</a></li>
+                <li><a href="#">Departamentos</a></li>
+                <li><a href="#">Ação Corretiva</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Relatórios/Estatísticas</a></li>
+            </ul>
+        </div>
+        <button class="btn-menu" id="mobile_btn">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        <div class="admin">
+            <button class="btn-login"><img src="../inicialadm/profile-user.png" alt="usuario" width="20" height="20"></button>
+            <span>Olá, Administrador</span>
+        </div>
+    </header>
+
+    <section class="welcome-section">
+        <h1>Status e Comentários</h1>
+        <p>Gerencie status do funcionário, funções e adicionar comentários para a Fundação de Saúde Parreiras Horta (FSPH).</p>
+    </section>
+
+
+
+    <div>
+        <img id="img10L" src="../telaGU/Imagens/Retângulo marrom claro.png" alt="">
+        <img id="img11L" src="../inicialadm/profile-user.png" alt="">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label7L">Nome:</label>
+        <input type="text" class="form-control7L" id="exampleFormControlInput1" placeholder="Digite seu nome">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label8L">Função:</label>
+        <input type="text" class="form-control8L" id="exampleFormControlInput1" placeholder="Descreva a sua função">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label8L">Delegar Ação:</label>
+        <input type="text" class="form-control8L" id="exampleFormControlInput1" placeholder="Delegar Função">
+      </div>
+
+
+
+      
+
+    <main>
+        <h4>Comentários</h4>
+        <form novalidate>
+            <div class="mb-3">
+                <label for="title-non-compliance" class="form-label">Título da mensagem:</label>
+                <input type="text" class="form-control" id="title-non-compliance" required>
+                <div id="invalid-title">Insira o título corretamente!</div>
+            </div>
+            
+            <div class="mb-3">
+                <label for="description-non-compliance" class="form-label">Descrição:</label>
+                <textarea class="form-control" id="description-non-compliance" required></textarea>
+                <div id="invalid-description">Insira a descrição corretamente!</div>
+            </div>
+            
+            <div class="d-flex mb-3 justify-content-center">
+                <button type="submit" class="btn btn-primary">Enviar comentário</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p id="fim">&copy; 2024 Fundação de Saúde Parreiras Horta. Todos os direitos reservados.</p>
+        <ul id="list-contacts">
+            <li><img src="../tela-de-registro-de-nao-conformidades/img/Gmail Logo Vector.png" class="img-fluid" alt="logo do GMAIL"> ssocial.hemose@fsph.se.gov.br</li>
+            <li><img src="../tela-de-registro-de-nao-conformidades/img/logo-removebg-preview.png" class="img-fluid" alt="logo do GOV.BR"> ouvidoria.fsph@fsph.se.gov.br</li>
+            <li><img src="../tela-de-registro-de-nao-conformidades/img/silhueta-de-alca-de-telefone.png" class="img-fluid" alt="Ícone te telefone"> +55 79 3225-8057 / 3234-6010</li>
+        </ul>
+    </footer>
+<script src="status.js"></script>
+</body>
+</html>
