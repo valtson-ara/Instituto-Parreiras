@@ -167,6 +167,14 @@
     position: absolute;
     transform: translate(210px, 260px);
     font-family: 'Times New Roman', Times, serif;
+    width: 8rem;
+    height: 2rem;
+    background-color: rgb(6, 6, 178);
+    color: white;
+    border-radius: 8px;
+    margin-top: 1rem;
+    border-style: none;
+
 }
 
 
@@ -297,7 +305,6 @@
 }
 
 
-
 #containerL {
     transform: translateX(-35px);
     width: 100%;
@@ -308,6 +315,7 @@
     left: 0;
     width: 100%;
     transform: translate(0, 200px);
+    bottom: 0;
     
 }
 

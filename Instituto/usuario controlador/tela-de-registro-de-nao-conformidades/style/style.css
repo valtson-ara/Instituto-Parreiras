@@ -66,7 +66,7 @@ textarea {
     resize: none;
 }
 
-#invalid-title, #invalid-description, #invalid-date, #invalid-origin {
+#invalid-title, #invalid-description, #invalid-date, #invalid-origin, #invalid-department, #invalid-severity {
     display: none;
     font-size: 0.8rem;
     color: #c01405;

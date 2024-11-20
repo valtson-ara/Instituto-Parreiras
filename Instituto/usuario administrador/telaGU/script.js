@@ -1,18 +1,45 @@
-function alterarStatus(status) {
-  // Aqui podemos enviar a escolha para o backend com uma requisição
-  // fetch('/api/alterarStatus', { method: 'POST', body: JSON.stringify({ status }) });
+ async function alterarStatus(status) {
+  let idUser
 
-  // Exibe mensagem na página sobre a ação escolhida
-    // Mensagem que indica o status do usuário
-    const mensagemStatus = document.getElementById('mensagemStatus');
-    // Verifica o status e exibe a mensagem apropriada
-    if (status === 'ativo') {
-      mensagemStatus.textContent = "Usuário ativado com sucesso! ✓";
-      mensagemStatus.style.color = "green";
-    } else {
-      mensagemStatus.textContent = "Usuário desativado com sucesso! ✗";
-      mensagemStatus.style.color = "red";
-    }
+  const email = document.getElementById('email').value
+
+  const responseUser = await fetch("http://localhost:8080/api/users", {
+    method: 'GET',
+    credentials: 'include'
+  })
+
+  const resultUser = await responseUser.json().then(res => res) 
+
+  resultUser.forEach(value => {
+    if (value.email === email) {
+      idUser = value.id
+    } 
+  })
+
+  if (idUser === undefined) {
+    alert('usuário não existe!')
+  } else {
+
+    const response = await fetch(`http://localhost:8080/api/users/${idUser}/roles`, {
+      method: 'PUT',
+      credentials: 'include',
+      headers: {
+        'Content-type': 'application/json'
+      },
+      body: JSON.stringify([
+        "ADMIN"
+      ])
+    })
+  
+    console.log(response)
+  
+    document.getElementById('email').value = ''
+
   }
 
+}
 
+
+document.getElementById('efetivo1L').addEventListener('click', () => {
+  alterarStatus()
+})

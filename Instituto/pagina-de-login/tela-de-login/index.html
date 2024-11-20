@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="header">
+        <img src="./img/fsph-logo.png.png">
+        <img src="./img/sergipe-logo.png.png">
+    </div>
+
+    <div class="content">
+        <h1>Fundação de Saúde Parreiras Horta</h1>
+        <p>Sistema de Conformidades</p>
+    </div>
+    
+    <div class="wrapper">
+        <form ID="loginForm">
+            <h1>Login</h1>
+            
+            <div class="input-box">
+                <input type="text" id="email" placeholder="Digite seu E-mail" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            
+            <div class="input-box">
+                <input type="password" id="senha" placeholder="Senha" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+
+            <button type="button" onclick="logar()" class="button">Entrar</button>
+        
+            <div class="register-link">
+                <p> <a href="../tela-de-cadastro/index.html"> Cadastre-se</a></p>
+            </div>
+            <p id="error-message" style="color: red; display: none;"></p>
+        </form>
+     </div>
+
+     <script src="./src/script.js"></script>
+</body>
+</html>
