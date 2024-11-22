@@ -9,23 +9,63 @@
     <title>Registro de não Conformidades</title>
 </head>
 <body>
-    <header class="d-flex flex-column mb-3">
-        <img src="./img/image.png" alt="Logo da Empresa" class="p-2 logo-empresa">
-
-        <nav class="p-2">
-                <span class="align-middle float-end">
-                    <a href="">
-                        <img src="./img/usuario-de-perfil.png" alt="ícone de perfil" class="align-middle">
-                        Olá, Usuário
-                    </a>
-                </span>
+    <div class="logo">
+        <img src="../inicialadm/FSPH Logo.jpg" alt="FSPH Logo", 200px>
+        <img src="../inicialadm/Sergipe Logo.jpg" alt="Sergipe Logo", 300px>
+    </div>
+      <header class="top-bar">
+        <nav>
+            <ul>
+                <li><a href="../inicialadm/inicioadministrador.html" >Home</a></li>
+                    <li><a href="../sobre/sobre.html">Sobre</a></li>
+                    <li><a href="../tela-de-registro-de-nao-conformidades/index.html">Não Conformidades</a></li>
+                    <li><a href="../departamentos/departamentos.html">Departamentos</a></li>
+                    <li><a href="#">Ação Corretiva</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Relatórios/Estatísticas</a></li>
+                    <li><a href="../Residencia HOME/controle.html">Controle</a></li>
+            </ul>
         </nav>
-
-        <div class="d-flex flex-column mb-3 justify-content-center">
-            <h3 class="p-2">Registro de Não Conformidades</h3>
-            <p class="p-2">Documente e gerencie não conformidades de forma clara e eficaz.</p>
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li><a href="../inicialadm/inicioadministrador.html" >Home</a></li>
+                    <li><a href="../sobre/sobre.html">Sobre</a></li>
+                    <li><a href="../tela-de-registro-de-nao-conformidades/index.html">Não Conformidades</a></li>
+                    <li><a href="../departamentos/departamentos.html">Departamentos</a></li>
+                    <li><a href="#">Ação Corretiva</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Relatórios/Estatísticas</a></li>
+                    <li><a href="../Residencia HOME/controle.html">Controle</a></li>
+            </ul>
+        </div>
+        <button class="btn-menu" id="mobile_btn">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        <div class="admin">
+            <button class="btn-login" onclick="window.location.href=''"><img src="../inicialadm/profile-user.png" alt="usuario" width="20" height="20"></button>
+            <a href="" class="link-branco"><span>Olá, Controlador</span></a>
         </div>
     </header>
+    
+    
+    <div id="profile-options-modal" class="profile-options-modal">
+        <div class="profile-options-content">
+            <div class="profile-header">
+                <img src="../inicialadm/profile-user.png" alt="Perfil" class="profile-image" width="80" height="80">
+                <h3>Olá, Controlador</h3>
+            </div>
+            <div class="profile-options">
+                <h4>Filtros e opções de customização</h4>
+                <ul>
+                    <li>Alterar Tema</li>
+                    <li>Configurações de Perfil</li>
+                    <li>Preferências de Notificação</li>
+                    <li>Gerenciar Permissões</li>
+                    <li id="sair"><a href=""></a>Sair</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
     <main>
         <h4>Registrar Não Conformidade</h4>
@@ -121,6 +161,6 @@
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="./src/script.js" type="module"></script>
+    <script src="../tela-de-registro-de-nao-conformidades/package.json" type="module"></script>
 </body>
 </html>

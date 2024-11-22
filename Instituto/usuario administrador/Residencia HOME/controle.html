@@ -7,20 +7,34 @@
     <link rel="stylesheet" href="controle.css">
 </head>
 <body>
-    <header>
-        <div class="headerd">
-            <img src="imagem/logo.jog.png" alt="Fundação Parreiras Horta">
-        </div>
+    <div class="logo">
+        <img src="../inicialadm/FSPH Logo.jpg" alt="FSPH Logo", 200px>
+        <img src="../inicialadm/Sergipe Logo.jpg" alt="Sergipe Logo", 300px>
+    </div>
+      <header class="top-bar">
         <nav>
-            <a href="home.html">Home</a>
-            <a href="">Sobre</a>
-            <a href="controle.html">Não Conformidades</a>
-            <a href="">Ação Corretiva</a>
-            <a href="">Contato</a>
-            <a href="relatorio.html">Relatórios/Estatísticas</a>
-            <a>Olá, usuário</a>
+            <ul>
+                <li><a href="../inicialadm/inicioadministrador.html" >Home</a></li>
+          <li><a href="../sobre/sobre.html">Sobre</a></li>
+          <li><a href="../tela-de-registro-de-nao-conformidades/index.html">Não Conformidades</a></li>
+          <li><a href="../departamentos/departamentos.html">Departamentos</a></li>
+          <li><a href="../Residencia HOME/controle.html">Controle</a></li>
+            </ul>
         </nav>
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li><a href="../inicialadm/inicioadministrador.html" >Home</a></li>
+          <li><a href="../sobre/sobre.html">Sobre</a></li>
+          <li><a href="../tela-de-registro-de-nao-conformidades/index.html">Não Conformidades</a></li>
+          <li><a href="../departamentos/departamentos.html">Departamentos</a></li>
+          <li><a href="../Residencia HOME/controle.html">Controle</a></li>
+            </ul>
+        </div>
+        <button class="btn-menu" id="mobile_btn">
+            <i class="fa-solid fa-bars"></i>
+          </button>
     </header>
+    
 
     <main>
         <section class="titulo">
@@ -32,12 +46,12 @@
          <div class="caixinha">
              <h2>Registrar Nova Não Conformidade</h2>
              <p>Preencha o formulário para registrar uma nova não conformidade.</p>
-             <a href="./registro.html" class="button">Registrar</a>
+             <a href="../tela-de-registro-de-nao-conformidades/index.html" class="button">Registrar</a>
          </div>
          <div class="caixinha">
              <h2>Monitorar Não Conformidades</h2>
              <p>Visualize e acompanhe o status das não conformidades registradas.</p>
-             <a href="monitoramento.html" class="button">Monitorar</a>
+             <a href="./monitoramento.html" class="button">Monitorar</a>
          </div>
      </section>
  </main>

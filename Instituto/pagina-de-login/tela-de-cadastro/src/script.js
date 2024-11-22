@@ -54,7 +54,7 @@ export async function postValues (dataObject) {
             credentials: 'include',
         })
 
-        window.location.href = "../tela-de-login/index.html"
+        window.location.href = "../../../index.html"
 
     } catch (error) {
         console.log(`Ocorreu um ${error}`)

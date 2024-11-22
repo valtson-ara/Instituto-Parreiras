@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Ações Corretivas - FSPH</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="AÇÃO.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="../inicialadm/FSPH Logo.jpg" alt="FSPH Logo" height="100">
+        <img src="../inicialadm/Sergipe Logo.jpg" alt="Sergipe Logo" height="100">
+    </div>
+
+    <header class="top-bar">
+        <nav>
+            <ul>
+                <li><a href="../inicialadm/inicioadministrador.html" >Home</a></li>
+          <li><a href="../sobre/sobre.html">Sobre</a></li>
+          <li><a href="../tela-de-registro-de-nao-conformidades/index.html">Não Conformidades</a></li>
+          <li><a href="../departamentos/departamentos.html">Departamentos</a></li>
+          <li><a href="../Residencia HOME/controle.html">Controle</a></li>
+            </ul>
+        </nav>
+        <div class="admin">
+            <button class="btn-login"><img src="../inicialadm/profile-user.png" alt="usuario" width="20" height="20"></button>
+            <a href="#" class="link-branco"><span>Olá, Administrador</span></a>
+        </div>
+    </header>
+
+    <main>
+        <section class="welcome-section">
+            <h1>Gestão de Ações Corretivas</h1>
+            <p>Registre e acompanhe as ações corretivas da Fundação Parreiras Horta</p>
+        </section>
+
+        <section class="form-section">
+            <h2>Registrar Nova Ação Corretiva</h2>
+            <form id="acao-form">
+                <label for="titulo">Título da ação corretiva:</label>
+                <input type="text" id="titulo" required>
+
+                <label for="descricao">Descrição:</label>
+                <textarea id="descricao" rows="4" required></textarea>
+
+                <label for="responsavel">Responsável pela ação:</label>
+                <input type="text" id="responsavel" required>
+
+                <label for="data-criacao">Data de criação:</label>
+                <input type="date" id="data-criacao" required>
+
+                <label for="prazo-fechamento">Prazo de fechamento:</label>
+                <input type="date" id="prazo-fechamento" required>
+
+                <button type="submit">Registrar Ação Corretiva</button>
+            </form>
+        </section>
+
+        <section class="lista-section">
+            <h2>Ações Corretivas Registradas</h2>
+            <table id="userTable">
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Descrição</th>
+                        <th>Data de Criação</th>
+                        <th>Responsável</th>
+                        <th>Prazo de Fechamento</th>
+                    </tr>
+                </thead>
+                <tbody id="lista-acoes">
+                    <!-- Dados serão adicionados dinamicamente -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p id="fim">&copy; 2024 Fundação de Saúde Parreiras Horta. Todos os direitos reservados.</p>
+        <ul id="list-contacts">
+            <li><img src="../tela-de-registro-de-nao-conformidades/img/Gmail Logo Vector.png" class="img-fluid" alt="logo do GMAIL">  ssocial.hemose@fsph.se.gov.br</li>
+            <li><img src="../tela-de-registro-de-nao-conformidades/img/logo-removebg-preview.png" class="img-fluid" alt="logo do GOV.BR">  ouvidoria.fsph@fsph.se.gov.br</li>
+            <li><img src="../tela-de-registro-de-nao-conformidades/img/silhueta-de-alca-de-telefone.png" class="img-fluid" alt="Ícone te telefone">  +55 79 3225-8057 / 3234-6010</li>
+        </ul>
+    </footer>
+
+    <script src="AÇÃO.js"></script>
+</body>
+</html>

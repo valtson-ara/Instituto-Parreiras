@@ -1,137 +1,288 @@
+/* Reset padrão */
 * {
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* estilização no body */
+/* Estilos gerais */
 body {
-    background-color: #D9D9D9;
-    padding-bottom: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
-/* estilização nos elementos do header */
-header {
-    background-color: #164095;
-    display: flex;
-    flex-direction: row;
-    height: 29vh;
+/* Cabeçalho e navegação */
+.logo {
+  background-color: #164096;
 }
 
-.logo-empresa {
-    height: auto;
-    width: 20vw;
-}
- 
-nav {
-    background-color: #979797;
-    height: 7vh;
+.logo img {
+  height: 100px;
+  margin-right: 50px;
+  text-align: center;
 }
 
-nav img {
-    height: auto;
-    width: 2vw;
+.top-bar {
+  background-color: #979797;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
 }
 
-nav a {
-    text-decoration: none;
-    color: white;
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
 }
 
-header div {
-    align-items: center;
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-header div p {
-    color: white;
-    margin-top: 0;
+/* Seções principais */
+.welcome-section {
+  background-color: #2455a8;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
 
-header div h3 {
-    color: white;
-    margin-bottom: -0.5rem;
+.about-section {
+  padding: 20px;
+  text-align: center;
 }
 
-/* estilização nos elementos do main */
-main {
-    width: 50vw;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 2rem;
+.images-row {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
 }
 
-main h4 {
-    color: #164095;
+.image img {
+  width: 350px;
+  height: auto;
+  border: 1px solid #ccc;
+  padding: 5px;
 }
 
-textarea {
-    resize: none;
+.image p {
+  margin-top: 10px;
+  font-size: 14px;
 }
 
-#invalid-title, #invalid-description, #invalid-date, #invalid-origin, #invalid-department, #invalid-severity {
-    display: none;
-    font-size: 0.8rem;
-    color: #c01405;
+/* Botões e interações */
+.btn-login {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  margin-left: 10px;
 }
 
-/* estiliza a tabela das não conformidades */
-section {
-    width: 50vw;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 2rem;
+.btn-login img {
+  border-radius: 50%;
+  transition: transform 0.3s ease;
 }
 
-table {
-    background-color: white;
+.btn-login:hover img {
+  transform: scale(1.1);
 }
 
-section h4 {
-    color: #164095;
+.btn-menu {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-right: auto;
 }
 
-#th-title, #th-description, #th-date, #th-status {
-    color: #164095;
+.btn-menu i {
+  font-size: 24px;
+  color: white;
+  transition: all 0.3s ease;
 }
 
-/* estilização nos elementos do footer */
+.btn-menu:hover i {
+  color: #0056b3;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 800px;
+  border-radius: 8px;
+}
+
+/* Menu Mobile */
+#mobile_btn {
+  display: none;
+}
+
+#mobile_menu {
+  display: none;
+}
+
+#mobile_menu ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#mobile_menu ul li {
+  margin-bottom: 10px;
+}
+
+#mobile_menu ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#mobile_menu ul li a:hover {
+  color: #42b5ea;
+}
+
 footer {
-    margin-top: 3.1rem;
+  background-color: #979797;
+  margin-top: 3.1rem;
+  width: 100%;
+  min-height: 5.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  color: white;
 }
 
 .footer-main {
-    background-color: #979797;
-    width: 100%;
-    min-height: 5.2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-#list-contacts {
-    position: absolute;
-    right: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 #container-direitos {
-    margin-top: 1rem;
+  text-align: left;
+  font-size: 0.8rem;
+}
+
+#list-contacts {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+  font-size: 0.8rem;
+}
+
+#list-contacts li {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
 }
 
 .img-fluid {
-    width: 18px;
-    height: auto;
+  width: 18px;
+  height: auto;
+  margin-right: 8px;
 }
 
-footer li {
-    list-style-type: none;
+/* Responsividade */
+@media screen and (max-width: 1170px) {
+  nav ul {
+    display: none;
+  }
+
+  #mobile_btn {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  #mobile_menu.active {
+    display: block;
+  }
+
+  #mobile_nav_list {
     display: flex;
-    flex-direction: row;
-    font-size: 0.8rem;
-}
+    flex-direction: column;
+    gap: 12px;
+    margin: 12px 0;
+  }
 
-footer p {
-    font-size: 0.8rem;
+  #mobile_nav_list.nav-item {
+    list-style: none;
     text-align: center;
+  }
 }
 
+@media (max-width: 768px) {
+  .logo img {
+    height: 70px;
+    margin-right: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .admin {
+    font-size: 12px;
+  }
+
+  .welcome-section,
+  .about-section {
+    padding: 15px;
+  }
+
+  .images-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image img {
+    width: 90%;
+  }
+
+  .control-section {
+    padding: 15px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+
+  .contacts {
+    text-align: center;
+  }
+
+  .footer-p {
+    font-size: 12px;
+  }
+}
+.link-branco {
+  text-decoration: none;
+  color: white;
+  pointer-events: none; /* Opcional: desativa cliques no link */
+}

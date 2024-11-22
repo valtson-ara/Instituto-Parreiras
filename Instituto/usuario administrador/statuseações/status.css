@@ -1,0 +1,726 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.logo {
+    background-color: #164096;
+}
+
+.logo img {
+    height: 100px;
+    margin-right: 50px;
+    text-align: center;
+}
+
+.top-bar {
+    background-color: #979797;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    width: 50vw;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2rem;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main h4 {
+    color: #164095;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+.admin {
+    font-size: 14px;
+  }
+  .btn-login {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .btn-login img {
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  .btn-login:hover img {
+    transform: scale(1.1);
+  }
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    color: #444;
+    font-weight: 500;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+textarea.form-control {
+    min-height: 100px;
+    resize: none;
+}
+
+.btn-primary {
+    background-color: #164095;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #0d2b6b;
+}
+
+#invalid-title, #invalid-description, #invalid-origin {
+    display: none;
+    font-size: 0.8rem;
+    color: #c01405;
+}
+
+footer {
+    background-color: #979797;
+    margin-top: 3.1rem;
+    width: 100%;
+    min-height: 5.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.justify-content-center {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    main {
+        width: 90vw;
+        padding: 20px;
+    }
+}
+footer {
+    margin-top: 3.1rem;
+}
+
+.footer-main {
+    background-color: #979797;
+    width: 100%;
+    min-height: 5.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#list-contacts {
+    position: absolute;
+    right: 1rem;
+}
+
+#container-direitos {
+    margin-top: 1rem;
+}
+
+.img-fluid {
+    width: 18px;
+    height: auto;
+}
+
+footer li {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8rem;
+}
+
+footer p {
+    font-size: 0.8rem;
+    text-align: center;
+}
+.welcome-section {
+    background-color: #2455a8;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  /* Estilos para os containers de imagem */
+#img10L {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: #E6D5B8;
+    display: block;
+    margin: 20px auto;
+}
+
+#img11L {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Estilos base para labels */
+.form-label7L,
+.form-label8L,
+.form-label9L {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Estilos base para inputs e textarea */
+.form-control7L,
+.form-control8L,
+.form-control9L {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Estilos específicos para cada campo */
+.form-control7L {  /* Nome */
+    background-color: #f8f9fa;
+}
+
+.form-control8L {  /* Função */
+    background-color: #f8f9fa;
+}
+
+.form-control9L {  /* Descrição */
+    min-height: 100px;
+    resize: vertical;
+    background-color: #f8f9fa;
+}
+
+/* Estilo para placeholder */
+.form-control7L::placeholder,
+.form-control8L::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+/* Estilo para o campo Efetivo */
+#efetivo3L {
+    color: #666;
+    font-size: 14px;
+    text-align: right;
+    margin-top: 10px;
+    padding-right: 15px;
+}
+
+/* Estilo para focus nos campos */
+.form-control7L:focus,
+.form-control8L:focus,
+.form-control9L:focus {
+    outline: none;
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Estilos para o container principal */
+.mb-3 {
+    margin-bottom: 1rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #img10L {
+        width: 150px;
+        height: 150px;
+    }
+
+    #img11L {
+        width: 90px;
+        height: 90px;
+    }
+
+    .mb-3 {
+        max-width: 90%;
+        padding: 0 15px;
+    }
+}
+/* Botão de login */
+.btn-login {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.btn-login img {
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.btn-login:hover img {
+  transform: scale(1.1);
+}
+
+/* Responsividade para telas pequenas (mobile) */
+@media (max-width: 768px) {
+  .logo img {
+    height: 70px; /* Ajustar o tamanho do logo */
+    margin-right: 10px; /* Reduzir margem para telas menores */
+  }
+
+  nav ul {
+    flex-direction: column; /* Mudar o menu para coluna no mobile */
+    gap: 10px;
+    text-align: center; /* Centralizar o menu no mobile */
+  }
+
+  .admin {
+    font-size: 12px; /* Texto menor para mobile */
+  }
+
+  .welcome-section {
+    padding: 15px; /* Reduzir o padding */
+  }
+
+  .about-section {
+    padding: 15px;
+  }
+
+  .images-row {
+    flex-direction: column; /* Imagens em coluna no mobile */
+    align-items: center;
+  }
+
+  .image img {
+    width: 90%; /* Tornar as imagens mais flexíveis */
+  }
+
+  .control-section {
+    padding: 15px; /* Ajuste de padding no mobile */
+  }
+
+  footer {
+    font-size: 12px; /* Reduzir o texto no rodapé para mobile */
+  }
+
+  .contacts {
+    text-align: center; /* Centralizar contatos no mobile */
+  }
+
+  .footer-p {
+    font-size: 12px;
+  }
+}
+.btn-menu {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-right: auto; /* Empurra o botão para a direita */
+}
+
+.btn-menu i {
+  font-size: 24px; /* Tamanho do ícone */
+  color: white;    /* Cor do ícone */
+  transition: all 0.3s ease;
+}
+
+.btn-menu:hover i {
+  color: #0056b3; /* Cor do ícone ao passar o mouse */
+}
+#mobile_btn{
+  display: none;
+}
+#mobile_menu{
+  display: none;
+}
+
+#mobile_menu ul {
+  list-style: none; /* Remove as bolinhas (marcadores) */
+  padding-left: 0; /* Remove o recuo padrão da lista */
+}
+
+#mobile_menu ul li a {
+  text-decoration: none; /* Remove sublinhado */
+  color: inherit; /* Mantém a cor do texto já definida */
+}
+
+#mobile_menu ul li {
+  margin-bottom: 10px; /* Espaçamento entre os itens, opcional */
+}
+
+#mobile_menu ul li a:hover {
+  color: #42b5ea; /* Cor opcional para hover no menu mobile */
+}
+
+@media screen and (max-width: 1170px) {
+  nav ul {
+    display: none; /* Oculta a lista de navegação */
+  }
+
+  #mobile_btn {
+    display: block; /* Certifica-se de que o menu móvel esteja visível */
+    font-size: 1.5rem;
+    cursor: pointer;
+
+  }
+  
+  #mobile_menu.active{
+    display: block;
+  }
+  #mobile_nav_list{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 12px 0px;
+  }
+  #mobile_nav_list.nav-item{
+    list-style: none;
+    text-align: center;
+  }
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 800px;
+  border-radius: 8px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: black;
+}
+
+.search-box {
+  margin: 20px 0;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#userTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#userTable th,
+#userTable td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+#userTable th {
+  background-color: #f5f5f5;
+}
+
+.user-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-edit,
+.btn-delete {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-edit {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.btn-delete {
+  background-color: #f44336;
+  color: white;
+}
+
+.status-active {
+  color: #4CAF50;
+}
+
+.status-inactive {
+  color: #f44336;
+}
+.link-branco {
+  color: white; /* Define a cor do texto como branca */
+  text-decoration: none; /* Remove o sublinhado */
+}
+
+.link-branco:hover {
+  color: #cccccc; /* Cor ao passar o mouse (opcional) */
+}
+
+
+
+
+
+.profile-options-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.profile-options-content {
+  background-color: #fff;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s;
+}
+
+/* Cabeçalho do modal */
+.profile-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-header .profile-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 3px solid #007BFF;
+}
+
+.profile-header h3 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Opções */
+.profile-options {
+  text-align: center;
+}
+
+.profile-options h4 {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.profile-options ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.profile-options ul li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  color: #007BFF;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.profile-options ul li:hover {
+  background-color: #f0f0f0;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: scale(0.9);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+
+
+
+
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Conteúdo do modal */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* Estilo dos botões */
+.btn-edit, .btn-delete {
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.btn-edit {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.btn-delete {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Estilo para o campo de pesquisa */
+#searchUser {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Tabela */
+#userTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#userTable th, #userTable td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+#userTable th {
+  background-color: #f2f2f2;
+}
+
+/* Estilos para status */
+.status-ativo {
+  color: green;
+}
+
+.status-inativo {
+  color: red;
+}
+
+
+.profile-container {
+  position: relative; /* Cria um contêiner posicionado */
+  width: 150px; /* Largura do contêiner */
+  height: 150px; /* Altura do contêiner */
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.rounded-box {
+  position: absolute; /* Posiciona o quadrado no fundo */
+  top: 0; /* Alinha ao topo do contêiner */
+  left: 0; /* Alinha à esquerda do contêiner */
+  width: 100%; /* Ocupa a largura do contêiner */
+  height: 100%; /* Ocupa a altura do contêiner */
+  background-color: #d3d3d3; /* Cor cinza */
+  border-radius: 10px; /* Cantos arredondados */
+  z-index: 1; /* Define a camada atrás da imagem */
+}
+
+.profile-container img {
+  position: absolute; /* Posiciona a imagem */
+  top: 50%; /* Centraliza verticalmente */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translate(-50%, -50%); /* Ajusta a posição para o centro exato */
+  width: 80%; /* Ajusta o tamanho da imagem */
+  height: auto; /* Mantém a proporção da imagem */
+  z-index: 2; /* Define a camada acima do quadrado */
+}

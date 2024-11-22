@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,95 +8,73 @@
 </head>
 <body>
 <div class="logo">
-    <img src="FSPH Logo.jpg" alt="FSPH Logo", 200px>
-    <img src="Sergipe Logo.jpg" alt="Sergipe Logo", 300px>
+    <img src="FSPH Logo.jpg" alt="FSPH Logo" style="height:100px;">
+    <img src="Sergipe Logo.jpg" alt="Sergipe Logo" style="height:100px;">
 </div>
 <header class="top-bar">
     <nav>
         <ul>
             <li><a href="../inicialadm/inicioadministrador.html" >Home</a></li>
-            <li><a href="../tela-de-registro-de-nao-conformidades/index.html">Não Conformidades</a></li>
-            <li><a href="../departamentos/departamentos.html">Departamentos</a></li>
+          <li><a href="../sobre/sobre.html">Sobre</a></li>
+          <li><a href="../tela-de-registro-de-nao-conformidades/index.html">Não Conformidades</a></li>
+          <li><a href="../departamentos/departamentos.html">Departamentos</a></li>
+          <li><a href="../Residencia HOME/controle.html">Controle</a></li>
         </ul>
     </nav>
     <div id="mobile_menu">
         <ul id="mobile_nav_list">
-            <li><a href="../inicialadm/inicioadministrador.html">Home</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Não Conformidades</a></li>
-            <li><a href="#">Departamentos</a></li>
-            <li><a href="#">Ações Corretivas</a></li>
-            <li><a href="#">Contato</a></li>
-            <li><a href="#">Relatórios/Estatísticas</a></li>
+            <li><a href="../inicialadm/inicioadministrador.html" >Home</a></li>
+          <li><a href="../sobre/sobre.html">Sobre</a></li>
+          <li><a href="../tela-de-registro-de-nao-conformidades/index.html">Não Conformidades</a></li>
+          <li><a href="../departamentos/departamentos.html">Departamentos</a></li>
+          <li><a href="../Residencia HOME/controle.html">Controle</a></li>
         </ul>
     </div>
     <button class="btn-menu" id="mobile_btn">
         <i class="fa-solid fa-bars"></i>
     </button>
-    <div class="admin">
-        <button class="btn-login" onclick="window.location.href=''"><img src="profile-user.png" alt="usuario" width="30" height="30"></button>
-        <span>Olá, administrador</span>
-    </div>
 </header>
     
-    <section id="departament-section">
-        <h1>Gestão de Departamentos</h1>
-        <p>Visualize os departamentos da Fundação de Saúde Parreiras Horta (FSPH).</p>
-    </section>
+<section id="departament-section">
+    <h1>Gestão de Departamentos</h1>
+    <p>Visualize os departamentos da Fundação de Saúde Parreiras Horta (FSPH).</p>
+</section>
 
 <section id="content-section-1">
     <h2 id="content-title"><strong>Departamentos registrados</strong></h2>
 
     <table id="table-1">
         <tr>
-            <td class="td-vazio"></td>
-            <td class="td-vazio"></td>
-            <td class="td-vazio"></td>
-            <td class="td-vazio"></td>
+            <th>Número</th>
+            <th>Departamento</th>
+            <th>Descrição</th>
+            <th>Ações</th>
         </tr>
-        <tr>
-            <td>01</td>
-            <td class="td-1">Exmeplo de departamento</td>
-            <td class="td-1">Número de não conformidades associadas</td>
-            <td>
-                <button class="btn-table" onclick="window.location.href=''">Editar</button>
-                <button class="btn-table">Excluir</button>
-            </td>
-        </tr>
-        <tr>
-            <td>02</td>
-            <td class="td-2">Exemplo de departamento</td>
-            <td class="td-2">Número de não conformidades associadas</td>
-            <td>
-                <button class="btn-table">Editar</button>
-                <button class="btn-table">Excluir</button>
-            </td>
-        </tr>
+        
     </table>
 </section>
 
 <section id="content-section-2">
     <h2><strong>Adicionar novo departamento</strong></h2>
 
-    <p id="nome">Nome:</p>
-    <form>
-        <input type="text" name="input" placeholder="Nome" id="input-nome">
-    </form>
+    <form id="departamento-form">
+        <p id="nome">Nome:</p>
+        <input type="text" name="input" placeholder="Nome" id="input-nome" required>
 
-    <p id="descrição">Descrição:</p>
-    <form>
-        <input type="text" name="input" placeholder="Descrição" id="input-descrição">
-    </form>
+        <p id="descrição">Descrição:</p>
+        <input type="text" name="input" placeholder="Descrição" id="input-descrição" required>
 
-    <button id="btn-confirm" onclick="window.location.href=''">Enviar</button>
+        <button type="button" id="btn-confirm">Enviar</button>
+    </form>
 </section>
     
 <footer>
     <p id="fim">&copy; 2024 Fundação de Saúde Parreiras Horta. Todos os direitos reservados.</p>
-    <div class="contacts">
-        <p><a href="https://fsph.se.gov.br" style="color: #42b5ea;">ssocial.hemose@fsph.se.gov.br</a></p>
-        <p><a href="https://fsph.se.gov.br/index.php/ouvidoria/" style="color:#42b5ea" >ouvidoria.fsph@fsph.se.gov.br</a></p>
-        </div>
+    <ul id="list-contacts">
+        <li><img src="../tela-de-registro-de-nao-conformidades/img/Gmail Logo Vector.png" class="img-fluid" alt="logo do GMAIL">  ssocial.hemose@fsph.se.gov.br</li>
+        <li><img src="../tela-de-registro-de-nao-conformidades/img/logo-removebg-preview.png" class="img-fluid" alt="logo do GOV.BR">  ouvidoria.fsph@fsph.se.gov.br</li>
+        <li><img src="../tela-de-registro-de-nao-conformidades/img/silhueta-de-alca-de-telefone.png" class="img-fluid" alt="Ícone te telefone">  +55 79 3225-8057 / 3234-6010</li>
+    </ul>
     </div>
 </footer>
 <script src="departamentos.js"></script>

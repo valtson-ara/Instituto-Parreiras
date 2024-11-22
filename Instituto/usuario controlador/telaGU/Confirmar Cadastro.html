@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Usuários - FSPH</title>
+    <link rel="stylesheet" href="estilo1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="../inicialadm/FSPH Logo.jpg" alt="FSPH Logo">
+        <img src="../inicialadm/Sergipe Logo.jpg" alt="Sergipe Logo">
+    </div>
+
+    <header class="top-bar">
+        <nav class="desktop-nav">
+            <ul>
+              <li><a href="../inicialadm/inicioadministrador.html" >Home</a></li>
+              <li><a href="../sobre/sobre.html">Sobre</a></li>
+              <li><a href="../tela-de-registro-de-nao-conformidades/index.html">Não Conformidades</a></li>
+              <li><a href="../departamentos/departamentos.html">Departamentos</a></li>
+              <li><a href="#">Ação Corretiva</a></li>
+              <li><a href="#">Contato</a></li>
+              <li><a href="#">Relatórios/Estatísticas</a></li>
+              <li><a href="../Residencia HOME/controle.html">Controle</a></li>
+            </ul>
+        </nav>
+
+        <button class="btn-menu" id="mobile_btn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+              <li><a href="../inicialadm/inicioadministrador.html" >Home</a></li>
+              <li><a href="../sobre/sobre.html">Sobre</a></li>
+              <li><a href="../tela-de-registro-de-nao-conformidades/index.html">Não Conformidades</a></li>
+              <li><a href="../departamentos/departamentos.html">Departamentos</a></li>
+              <li><a href="#">Ação Corretiva</a></li>
+              <li><a href="#">Contato</a></li>
+              <li><a href="#">Relatórios/Estatísticas</a></li>
+              <li><a href="../Residencia HOME/controle.html">Controle</a></li>
+            </ul>
+        </div>
+
+        <div class="admin">
+            <button class="btn-login">
+                <img src="../inicialadm/profile-user.png" alt="usuario" width="20" height="20">
+            </button>
+            <a href="#" class="link-branco"><span>Olá, Controlador</span></a>
+        </div>
+    </header>
+
+    <div id="profile-options-modal" class="profile-options-modal">
+        <div class="profile-options-content">
+            <div class="profile-header">
+                <img src="profile-user.png" alt="Perfil" class="profile-image">
+                <h3>Olá, Administrador</h3>
+            </div>
+            <div class="profile-options">
+                <h4>Filtros e opções de customização</h4>
+                <ul>
+                    <li>Alterar Tema</li>
+                    <li>Configurações de Perfil</li>
+                    <li>Preferências de Notificação</li>
+                    <li>Gerenciar Permissões</li>
+                    <li id="sair"><a href="#">Sair</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="page-header">
+            <div class="header-background">
+                <h1>Gerenciamento de Usuários</h1>
+                <p>Gerencie usuários da Fundação de Saúde Parreiras Horta (FSPH).</p>
+            </div>
+        </section>
+
+        <section class="users-container">
+            <form class="user-card">
+                <div class="user-avatar">
+                    <img src="Imagens/User.png" alt="Avatar do usuário">
+                </div>
+                <div class="form-group">
+                    <label for="nome1">Nome:</label>
+                    <input type="text" id="nome1" name="nome" placeholder="Digite seu nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="funcao1">Função:</label>
+                    <input type="text" id="funcao1" name="funcao" placeholder="Descreva a sua função" required>
+                </div>
+                <div class="form-group">
+                    <label for="descricao1">Descrição:</label>
+                    <textarea id="descricao1" name="descricao" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="efetivo-label">
+                        <em>Efetivo</em>
+                        <input type="checkbox" name="efetivo" value="true">
+                    </label>
+                </div>
+                <button type="submit" class="btn-save">Salvar</button>
+            </form>
+
+            <!-- Repetir o form acima mais 3 vezes para os outros usuários -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p class="copyright">© 2024 Fundação de Saúde Parreiras Horta. Todos os direitos reservados.</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <img src="Imagens/email logo 1.png" alt="Email">
+                    <span>ssocial.hemose@fsph.se.gov.br</span>
+                </div>
+                <div class="contact-item">
+                    <img src="Imagens/gov-removebg-preview 2.png" alt="Governo">
+                    <span>ouvidoria.fsph@fsph.se.gov.br</span>
+                </div>
+                <div class="contact-item">
+                    <img src="Imagens/logo_telefone-removebg-preview 1.png" alt="Telefone">
+                    <span>+55 79 3225-8057 / 3234-6010</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="seu-arquivo-javascript.js"></script>
+</body>
+</html>

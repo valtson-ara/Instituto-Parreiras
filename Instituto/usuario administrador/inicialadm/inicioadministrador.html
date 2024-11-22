@@ -10,30 +10,58 @@
 </head>
 <body>
   <div class="logo">
-    <img src="FSPH Logo.jpg" alt="FSPH Logo", 200px>
-    <img src="Sergipe Logo.jpg" alt="Sergipe Logo", 300px>
+    <img src="../inicialadm/FSPH Logo.jpg" alt="FSPH Logo", 200px>
+    <img src="../inicialadm/Sergipe Logo.jpg" alt="Sergipe Logo", 300px>
 </div>
   <header class="top-bar">
     <nav>
         <ul>
             <li><a href="../inicialadm/inicioadministrador.html" >Home</a></li>
-            <li><a href="../tela-de-registro-de-nao-conformidades/index.html">Não Conformidades</a></li>
-            <li><a href="../departamentos/departamentos.html">Departamentos</a></li>
-            <li><a href="../telaGU/Confirmar Cadastro.html">Controle de usuários</a></li>
+          <li><a href="../sobre/sobre.html">Sobre</a></li>
+          <li><a href="../tela-de-registro-de-nao-conformidades/index.html">Não Conformidades</a></li>
+          <li><a href="../departamentos/departamentos.html">Departamentos</a></li>
+          <li><a href="../Residencia HOME/controle.html">Controle</a></li>
         </ul>
     </nav>
     <div id="mobile_menu">
         <ul id="mobile_nav_list">
             <li><a href="../inicialadm/inicioadministrador.html" >Home</a></li>
-            <li><a href="../tela-de-registro-de-nao-conformidades/index.html">Não Conformidades</a></li>
-            <li><a href="../departamentos/departamentos.html">Departamentos</a></li>
-            <li><a href="../telaGU/Confirmar Cadastro.html">Controle de usuários</a></li>
+          <li><a href="../sobre/sobre.html">Sobre</a></li>
+          <li><a href="../tela-de-registro-de-nao-conformidades/index.html">Não Conformidades</a></li>
+          <li><a href="../departamentos/departamentos.html">Departamentos</a></li>
+          <li><a href="../Residencia HOME/controle.html">Controle</a></li>
         </ul>
     </div>
     <button class="btn-menu" id="mobile_btn">
         <i class="fa-solid fa-bars"></i>
       </button>
+    <div class="admin">
+        <button class="btn-login" onclick="window.location.href=''"><img src="../inicialadm/profile-user.png" alt="usuario" width="20" height="20"></button>
+        <a href="" class="link-branco"><span>Olá, Administrador</span></a>
+    </div>
 </header>
+
+
+<div id="profile-options-modal" class="profile-options-modal">
+    <div class="profile-options-content">
+        <div class="profile-header">
+            <img src="../inicialadm/profile-user.png" alt="Perfil" class="profile-image">
+            <h3>Olá, Administrador</h3>
+        </div>
+        <div class="profile-options">
+            <h4>Filtros e opções de customização</h4>
+            <ul>
+                <li>Alterar Tema</li>
+                <li>Configurações de Perfil</li>
+                <li>Preferências de Notificação</li>
+                <li>Gerenciar Permissões</li>
+                <li id="sair"><a href=""></a>Sair</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
 
 <section class="welcome-section">
     <h1>Bem-vindo à Fundação de Saúde Parreiras Horta</h1>
@@ -64,6 +92,28 @@
     <h2>Novo sistema de controle? Saiba mais.</h2>
     <p>O novo sistema de controle foi desenvolvido para detectar e registrar automaticamente as não conformidades no ambiente.</p>
 </section>
+
+<div id="userPermissionsModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Gerenciar Permissões de Usuário</h2>
+        <div class="user-list">
+            <div class="search-box">
+                <input type="text" id="searchUser" placeholder="Buscar usuário...">
+            </div>
+            <table id="userTable">
+                <thead>
+                    <tr>
+                        <th>Usuário</th>
+                        <th>Tipo</th>
+                        <th>Status</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</div>
 
 <footer>
     <p id="fim">&copy; 2024 Fundação de Saúde Parreiras Horta. Todos os direitos reservados.</p>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="departamentos.css">
+    <title>Departamentos</title>
+</head>
+<body>
+    <div class="logo">
+        <img src="FSPH Logo.jpg" alt="FSPH Logo", 200px>
+        <img src="Sergipe Logo.jpg" alt="Sergipe Logo", 300px>
+    </div>
+      <header class="top-bar">
+        <nav>
+            <ul>
+                <li><a href="../inicialadm/inicioadministrador.html" >Home</a></li>
+            <li><a href="../sobre/sobre.html">Sobre</a></li>
+            <li><a href="../tela-de-registro-de-nao-conformidades/index.html">Não Conformidades</a></li>
+            <li><a href="../departamentos/departamentos.html">Departamentos</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Relatórios/Estatísticas</a></li>
+            <li><a href="../Residencia HOME/controle.html">Controle</a></li>
+                <li><a href="../Residencia HOME/monitoramento.html">Monitoramento</a></li>
+            </ul>
+        </nav>
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li><a href="../inicialadm/inicioadministrador.html" >Home</a></li>
+            <li><a href="../sobre/sobre.html">Sobre</a></li>
+            <li><a href="../tela-de-registro-de-nao-conformidades/index.html">Não Conformidades</a></li>
+            <li><a href="../departamentos/departamentos.html">Departamentos</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Relatórios/Estatísticas</a></li>
+            <li><a href="../Residencia HOME/controle.html">Controle</a></li>
+                <li><a href="../Residencia HOME/monitoramento.html">Monitoramento</a></li>
+            </ul>
+        </div>
+        <button class="btn-menu" id="mobile_btn">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        <div class="admin">
+            <button class="btn-login" onclick="window.location.href=''"><img src="profile-user.png" alt="usuario" width="20" height="20"></button>
+            <a href="" class="link-branco"><span>Olá, Administrador</span></a>
+        </div>
+    </header>
+    
+    
+    <div id="profile-options-modal" class="profile-options-modal">
+        <div class="profile-options-content">
+            <div class="profile-header">
+                <img src="profile-user.png" alt="Perfil" class="profile-image">
+                <h3>Olá, Administrador</h3>
+            </div>
+            <div class="profile-options">
+                <h4>Filtros e opções de customização</h4>
+                <ul>
+                    <li>Alterar Tema</li>
+                    <li>Configurações de Perfil</li>
+                    <li>Preferências de Notificação</li>
+                    <li>Gerenciar Permissões</li>
+                    <li><a href=""></a>Sair</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+        <div id="userPermissionsModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Gerenciar Permissões de Usuários</h2>
+                <input type="text" id="searchUser" placeholder="Pesquisar usuário...">
+                <table id="userTable">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Tipo</th>
+                            <th>Status</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    
+
+    
+    <section id="departament-section">
+        <h1>Gestão de Departamentos</h1>
+        <p>Visualize os departamentos da Fundação de Saúde Parreiras Horta (FSPH).</p>
+    </section>
+
+<section id="content-section-1">
+    <h2 id="content-title"><strong>Departamentos registrados</strong></h2>
+
+    <table id="table-1">
+        <tr>
+            <td class="td-vazio"></td>
+            <td class="td-vazio"></td>
+            <td class="td-vazio"></td>
+            <td class="td-vazio"></td>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td class="td-1">Exmeplo de departamento</td>
+            <td class="td-1">Número de não conformidades associadas</td>
+            <td>
+                <button class="btn-table" onclick="window.location.href=''">Editar</button>
+                <button class="btn-table">Excluir</button>
+            </td>
+        </tr>
+        <tr>
+            <td>02</td>
+            <td class="td-2">Exemplo de departamento</td>
+            <td class="td-2">Número de não conformidades associadas</td>
+            <td>
+                <button class="btn-table">Editar</button>
+                <button class="btn-table">Excluir</button>
+            </td>
+        </tr>
+    </table>
+</section>
+
+<section id="content-section-2">
+    <h2><strong>Adicionar novo departamento</strong></h2>
+
+    <p id="nome">Nome:</p>
+    <form>
+        <input type="text" name="input" placeholder="Nome" id="input-nome">
+    </form>
+
+    <p id="descrição">Descrição:</p>
+    <form>
+        <input type="text" name="input" placeholder="Descrição" id="input-descrição">
+    </form>
+
+    <button id="btn-confirm" onclick="window.location.href=''">Enviar</button>
+</section>
+    
+<footer>
+    <p id="fim">&copy; 2024 Fundação de Saúde Parreiras Horta. Todos os direitos reservados.</p>
+    <ul id="list-contacts">
+        <li><img src="../tela-de-registro-de-nao-conformidades/img/Gmail Logo Vector.png" class="img-fluid" alt="logo do GMAIL">  ssocial.hemose@fsph.se.gov.br</li>
+        <li><img src="../tela-de-registro-de-nao-conformidades/img/logo-removebg-preview.png" class="img-fluid" alt="logo do GOV.BR">  ouvidoria.fsph@fsph.se.gov.br</li>
+        <li><img src="../tela-de-registro-de-nao-conformidades/img/silhueta-de-alca-de-telefone.png" class="img-fluid" alt="Ícone te telefone">  +55 79 3225-8057 / 3234-6010</li>
+    </ul>
+    </div>
+</footer>
+<script src="departamentos.js"></script>
+</body>
+</html>

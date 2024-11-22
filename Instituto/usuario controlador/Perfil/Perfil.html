@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="Perfil.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="FSPH Logo.jpg" alt="FSPH Logo", 200px>
+        <img src="Sergipe Logo.jpg" alt="Sergipe Logo", 300px>
+    </div>
+      <header class="top-bar">
+        <nav>
+            <ul>
+            <li><a href="../inicialadm/inicioadministrador.html" >Home</a></li>
+            <li><a href="../sobre/sobre.html">Sobre</a></li>
+            <li><a href="../tela-de-registro-de-nao-conformidades/index.html">Não Conformidades</a></li>
+            <li><a href="../departamentos/departamentos.html">Departamentos</a></li>
+            <li><a href="#">Ação Corretiva</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Relatórios/Estatísticas</a></li>
+            <li><a href="../Residencia HOME/controle.html">Controle</a></li>
+            </ul>
+        </nav>
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li><a href="../inicialadm/inicioadministrador.html" >Home</a></li>
+            <li><a href="../sobre/sobre.html">Sobre</a></li>
+            <li><a href="../tela-de-registro-de-nao-conformidades/index.html">Não Conformidades</a></li>
+            <li><a href="../departamentos/departamentos.html">Departamentos</a></li>
+            <li><a href="#">Ação Corretiva</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Relatórios/Estatísticas</a></li>
+            <li><a href="../Residencia HOME/controle.html">Controle</a></li>
+            </ul>
+        </div>
+        <button class="btn-menu" id="mobile_btn">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        <div class="admin">
+            <button class="btn-login" onclick="window.location.href=''"><img src="profile-user.png" alt="usuario" width="20" height="20"></button>
+            <a href="" class="link-branco"><span>Olá, Administrador</span></a>
+        </div>
+    </header>
+    
+    
+    <div id="profile-options-modal" class="profile-options-modal">
+        <div class="profile-options-content">
+            <div class="profile-header">
+                <img src="profile-user.png" alt="Perfil" class="profile-image">
+                <h3>Olá, Administrador</h3>
+            </div>
+            <div class="profile-options">
+                <h4>Filtros e opções de customização</h4>
+                <ul>
+                    <li>Alterar Tema</li>
+                    <li>Configurações de Perfil</li>
+                    <li>Preferências de Notificação</li>
+                    <li>Gerenciar Permissões</li>
+                    <li id="sair"><a href=""></a>Sair</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <h1>Seu Perfil</h1>
+        <h3>Bem-vindo à sua área pessoal!</h3>
+    </section>
+
+    <main>
+        <div class="Info">
+            <img src="icon_user2-removebg-preview.png" alt="icon user" width="70rem" height="70rem">
+            <h3>Olá, usuário! Gerencie sua conta, analisando e alterando detalhes sempre que necessário e acompanhe os serviços solicitados do jeito mais rápido e seguro acessando o site www.fsph.se-gov.br e logando com a sua conta.</h3>
+        </div>
+
+        <div class="InformaçõesUsuario">
+            <h1>Informações Do Usuário </h1>
+            <p> <b> Nome: </b> <span id="nome">Usuário e Sobrenome do usuário</span> </p>
+            <p> <b> E-mail: </b> <span id="email">usuario@gmail.com</span> </p>
+            <p> <b> Telefone: </b> <span id="telefone">(79) 99999-9999</span> </p>
+            <p> <b> Endereço: </b> <span id="endereco">Rua Exemplo, 123, Aracaju, SE</span> </p>
+            <p> <b> Nascimento: </b> <span id="nascimento">07/09/2000</span> </p>
+           
+            <button id="editarPerfilBtn">Editar Perfil</button>
+        </div>
+
+        <div id="editForm" style="display:none;">
+            <form id="formEditarPerfil">
+                <label for="editNome">Nome:</label>
+                <input type="text" id="editNome" name="editNome" value="Usuário e Sobrenome do usuário"><br>
+
+                <label for="editEmail">E-mail:</label>
+                <input type="email" id="editEmail" name="editEmail" value="usuario@gmail.com"><br>
+
+                <label for="editTelefone">Telefone:</label>
+                <input type="text" id="editTelefone" name="editTelefone" value="(79) 99999-9999"><br>
+
+                <label for="editEndereco">Endereço:</label>
+                <input type="text" id="editEndereco" name="editEndereco" value="Rua Exemplo, 123, Aracaju, SE"><br>
+
+                <label for="editNascimento">Nascimento:</label>
+                <input type="date" id="editNascimento" name="editNascimento" value="2000-09-07"><br>
+
+                <button type="button" onclick="salvarEdicoes()">Salvar</button>
+                <button type="button" onclick="cancelarEdicao()">Cancelar</button>
+            </form>
+        </div>
+
+        <div class="Notificações">
+            <h1>Notificações Recentes </h1>
+            <h3>Você recebeu uma nova mensagem da equipe de saúde.</h3>
+            <hr>
+            <h3>Cadastro concluído com sucesso.</h3>
+            <h4 id="limparHistoricoBtn">Limpar histórico</h4>
+        </div>
+
+        <div class="exit">
+            <button>
+                <a href="#"><img src="exit_logo-removebg-preview.png" alt="exit logo" width="35rem"></a>
+            </button>
+        </div>
+    </main>
+
+    <footer>
+        <p id="fim">&copy; 2024 Fundação de Saúde Parreiras Horta. Todos os direitos reservados.</p>
+        <ul id="list-contacts">
+            <li><img src="../tela-de-registro-de-nao-conformidades/img/Gmail Logo Vector.png" class="img-fluid" alt="logo do GMAIL">  ssocial.hemose@fsph.se.gov.br</li>
+            <li><img src="../tela-de-registro-de-nao-conformidades/img/logo-removebg-preview.png" class="img-fluid" alt="logo do GOV.BR">  ouvidoria.fsph@fsph.se.gov.br</li>
+            <li><img src="../tela-de-registro-de-nao-conformidades/img/silhueta-de-alca-de-telefone.png" class="img-fluid" alt="Ícone te telefone">  +55 79 3225-8057 / 3234-6010</li>
+        </ul>
+        </div>
+    </footer>
+
+    <script src="Perfil.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="Perfil.js"></script>
+</body>
+</html>

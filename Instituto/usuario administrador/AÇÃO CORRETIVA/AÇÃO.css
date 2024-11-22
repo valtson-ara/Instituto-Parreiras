@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .logo {
+    background-color: #164096;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .logo img {
+    height: 100px;
+    margin-right: 50px;
+  }
+  
+  .top-bar {
+    background-color: #979797;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .admin {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .welcome-section {
+    background-color: #2455a8;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .form-section, .lista-section {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  input, textarea, button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .btn-login {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .btn-login img {
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  .btn-login:hover img {
+    transform: scale(1.1);
+  }
+
+  .link-branco {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .link-branco:hover {
+    color: #cccccc;
+  }
+  
+  #userTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  #userTable th, #userTable td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  #userTable th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  footer {
+    background-color: #979797;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-top: 20px;
+  }
+  
+  #list-contacts {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #list-contacts li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .img-fluid {
+    width: 18px;
+    height: auto;
+  }
+  
+  #fim {
+    font-size: 0.8rem;
+  }
+  
+  @media (max-width: 768px) {
+    .logo img {
+      height: 70px;
+      margin-right: 10px;
+    }
+  
+    .form-section, .lista-section {
+      width: 95%;
+      padding: 10px;
+    }
+  
+    footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    #list-contacts {
+      margin-top: 10px;
+    }
+  }

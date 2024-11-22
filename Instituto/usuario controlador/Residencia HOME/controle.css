@@ -1,0 +1,390 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #000000;
+}
+
+/* Header and Logo */
+header {
+    background-color: #164095;
+    color: #fff;
+    text-align: center;
+}
+
+.logo {
+    background-color: #164096;
+}
+
+.logo img {
+    height: 100px;
+    margin-right: 50px;
+}
+
+/* Navigation */
+nav {
+    background-color: #979797;
+    padding: 5px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: #979797;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+/* Main Content */
+main {
+    width: 85%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sections */
+.welcome-section {
+    background-color: #2455a8;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.about-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.control-section {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Title Section */
+.titulo {
+    background-color: #164095;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.titulo h1 {
+    margin-bottom: 10px;
+}
+
+.titulo p {
+    font-size: 1.2em;
+}
+
+/* Box Layout */
+.caixa {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.caixinha {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.caixinha h2 {
+    color: #164095;
+    margin-bottom: 15px;
+}
+
+.caixinha p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Images */
+.images-row {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.image img {
+    width: 350px;
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.image p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Buttons */
+.button {
+    background-color: #164095;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: #123074;
+}
+
+.btn-login {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.btn-login img {
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.btn-login:hover img {
+    transform: scale(1.1);
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 8px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: black;
+}
+
+/* Table Styles */
+#userTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#userTable th,
+#userTable td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#userTable th {
+    background-color: #f5f5f5;
+}
+
+/* Status Styles */
+.status-active {
+    color: #4CAF50;
+}
+
+.status-inactive {
+    color: #f44336;
+}
+
+/* Profile Modal */
+.profile-options-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.profile-options-content {
+    background-color: #fff;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #979797;
+    color: white;
+    font-size: 14px;
+}
+
+footer a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .social {
+    margin-top: 10px;
+}
+
+footer .social img {
+    width: 20px;
+    margin: 0 5px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .logo img {
+        height: 70px;
+        margin-right: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .images-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image img {
+        width: 90%;
+    }
+
+    .caixinha {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .modal-content {
+        width: 95%;
+        margin: 10% auto;
+    }
+}
+
+/* Mobile Menu */
+#mobile_btn {
+    display: none;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+@media screen and (max-width: 1170px) {
+    nav ul {
+        display: none;
+    }
+
+    #mobile_btn {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    #mobile_menu.active {
+        display: block;
+    }
+
+    #mobile_nav_list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 12px 0;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.link-branco {
+    color: white; /* Define a cor do texto como branca */
+    text-decoration: none; /* Remove o sublinhado */
+  }
+  
+  .link-branco:hover {
+    color: #cccccc; /* Cor ao passar o mouse (opcional) */
+  }
