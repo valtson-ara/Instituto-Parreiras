@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="departamentos.css">
+    <title>Departamentos</title>
+</head>
+<body>
+    
+    <header>
+        <div class="headerd">
+            <img src="logo.jog.png" alt="Fundação Parreiras Horta">
+        </div>
+        <nav>
+            <a href="../Residencia HOME/home.html">Home</a>
+            <a href="../Residencia HOME/controle.html">Não Conformidades</a>
+            <a href="../departamentos/departamentos.html">Departamentos</a>
+            <a href="../Residencia HOME/contato.html">Contato</a>
+            <a href="../Residencia HOME/monitoramento.html">Monitoramento</a>
+            <a href="../Perfil/Perfil.html">Perfil</a>
+        </nav>
+    </header>
+    
+   <section id="departament-section">
+        <h1>Gestão de Departamentos</h1>
+        <p>Visualize os departamentos da Fundação de Saúde Parreiras Horta (FSPH).</p>
+    </section>
+
+<section id="content-section-1">
+    <h2 id="content-title"><strong>Departamentos registrados</strong></h2>
+
+    <table id="table-1">
+        <tr>
+            <td class="td-vazio"></td>
+            <td class="td-vazio"></td>
+            <td class="td-vazio"></td>
+            <td class="td-vazio"></td>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td class="td-1">Exmeplo de departamento</td>
+            <td class="td-1">Número de não conformidades associadas</td>
+            <td>
+                <button class="btn-table" onclick="window.location.href=''">Editar</button>
+                <button class="btn-table">Excluir</button>
+            </td>
+        </tr>
+        <tr>
+            <td>02</td>
+            <td class="td-2">Exemplo de departamento</td>
+            <td class="td-2">Número de não conformidades associadas</td>
+            <td>
+                <button class="btn-table">Editar</button>
+                <button class="btn-table">Excluir</button>
+            </td>
+        </tr>
+    </table>
+</section>
+
+<section id="content-section-2">
+    <h2><strong>Adicionar novo departamento</strong></h2>
+
+    <p id="nome">Nome:</p>
+    <form>
+        <input type="text" name="input" placeholder="Nome" id="input-nome">
+    </form>
+
+    <p id="descrição">Descrição:</p>
+    <form>
+        <input type="text" name="input" placeholder="Descrição" id="input-descrição">
+    </form>
+
+    <button id="btn-confirm" type="button">Enviar</button>
+</section>
+    
+<footer>
+    <p>&copy; 2024 Fundação de Saúde Parreiras Horta. Todos os direitos reservados.</p>
+</footer>
+<script src="script.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+/* Reset e estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #000000;
+}
+
+/* Header */
+header {
+    background-color: #164095;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.headerd img {
+    width: 100%;
+    max-width: 520px; /* Imagem adaptável */
+    border-radius: 50%;
+}
+
+/* Navegação */
+nav {
+    background-color: #979797;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Conteúdo Principal */
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.titulo {
+    background-color: #164095;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.titulo h1 {
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.titulo p {
+    font-size: 1.2em;
+}
+
+/* Caixa Responsiva */
+.caixa {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.caixinha {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 40px); /* Adaptação para 3 colunas */
+    max-width: 300px;
+    min-width: 250px;
+    text-align: center;
+}
+
+.caixinha h2 {
+    color: #164095;
+    margin-bottom: 15px;
+}
+
+.caixinha p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #164095;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: #002b70;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #979797;
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    width: 100%;
+    bottom: 1;
+}
+
+footer a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+    main {
+        width: 95%;
+    }
+
+    .titulo h1 {
+        font-size: 1.8em;
+    }
+
+    .titulo p {
+        font-size: 1em;
+    }
+
+    .caixinha {
+        width: calc(50% - 20px); /* Adaptação para 2 colunas */
+    }
+
+    nav a {
+        margin: 10px; /* Melhor espaçamento para navegação */
+        display: inline-block;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo h1 {
+        font-size: 1.5em;
+    }
+
+    .titulo p {
+        font-size: 0.9em;
+    }
+
+    .caixinha {
+        width: 100%; /* Adaptação para 1 coluna */
+        margin-bottom: 20px;
+    }
+
+    .button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,187 @@
+/* Reset e estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #000000;
+}
+
+/* Header */
+header {
+    background-color: #164095;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.headerd img {
+    width: 100%;
+    max-width: 520px;
+    border-radius: 50%;
+}
+
+/* Navegação */
+nav {
+    background-color: #979797;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Principal */
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.titulo {
+    background-color: #164095;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.titulo h1 {
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.titulo p {
+    font-size: 1.2em;
+}
+
+.container {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    color: #164095;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sobre h2,
+.novo-sistema h2 {
+    font-size: 20px;
+    color: #164095;
+    margin-bottom: 10px;
+}
+
+.sobre p,
+.novo-sistema p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Imagens */
+.imagens {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap; /* Permite ajustar em telas menores */
+}
+
+.imagens div {
+    width: 30%;
+    min-width: 280px;
+}
+
+.imagens div img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #979797;
+    color: white;
+    font-size: 14px;
+}
+
+footer a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .social {
+    margin-top: 10px;
+}
+
+footer .social img {
+    width: 20px;
+    margin: 0 5px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    main {
+        width: 95%;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0; /* Links em bloco para dispositivos menores */
+    }
+
+    .titulo h1 {
+        font-size: 1.8em;
+    }
+
+    .titulo p {
+        font-size: 1em;
+    }
+
+    .imagens div {
+        width: 45%; /* Ajusta imagens para telas médias */
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo h1 {
+        font-size: 1.5em;
+    }
+
+    .titulo p {
+        font-size: 0.9em;
+    }
+
+    .imagens div {
+        width: 100%; /* Ajusta imagens para ocupar toda a largura */
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 10px;
+    }
+}

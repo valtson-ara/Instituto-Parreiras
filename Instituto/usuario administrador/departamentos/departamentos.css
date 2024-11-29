@@ -1,0 +1,177 @@
+/* Reset padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #164095;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.headerd img {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 50%;
+}
+
+/* Navegação */
+nav {
+  background-color: #979797;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Seção Departamentos */
+#departament-section {
+  background-color: #2455a8;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Conteúdo Geral */
+#content-section-1, #content-section-2 {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+h2 {
+  color: #2455a8;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Tabelas */
+#table-1 {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+td {
+  border: 1px solid #979797;
+  padding: 10px;
+}
+
+.td-vazio {
+  padding: 20px;
+  background-color: #002f6c;
+}
+
+.td-1, .td-2 {
+  color: #979797;
+}
+
+.btn-table {
+  color: white;
+  width: 100px;
+  background-color: #002f6c;
+  transition: 0.3s ease;
+  cursor: pointer;
+  border: none;
+  padding: 5px;
+}
+
+.btn-table:hover {
+  transform: scale(1.1);
+}
+
+/* Formulário para adicionar novo departamento */
+#content-section-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px; /* Espaçamento uniforme entre campos */
+  margin-top: 40px;
+}
+
+#content-section-2 label {
+  width: 100%;
+  max-width: 500px;
+  text-align: left;
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#input-nome, #input-descrição {
+  width: 100%; /* Campos ocupam toda a largura disponível */
+  max-width: 500px; /* Limite para telas grandes */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#btn-confirm {
+  background-color: #002f6c;
+  color: white;
+  width: 100%;
+  max-width: 500px;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+#btn-confirm:hover {
+  background-color: #001b40;
+}
+
+/* Rodapé */
+footer {
+  background-color:#979797;
+  color: white;
+  padding: 15px;
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  margin-top: 40px; /* Espaço acima do rodapé */
+}
+
+footer a {
+  color: #ccc;
+  text-decoration: none;
+  display: block;
+  margin: 5px 0;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  margin: 5px 0;
+}

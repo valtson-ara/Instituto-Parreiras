@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+/* estilização no body */
+body {
+    background-color: #D9D9D9;
+    padding-bottom: 0;
+}
+
+/* estilização nos elementos do header */
+header {
+    background-color: #164095;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .headerd img {
+    width: 520px;
+    border-radius: 50%;
+  }
+  
+  nav {
+    background-color: #979797;
+    padding: 5px 0;
+    text-align: center;
+  }
+  nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+/* estilização nos elementos do main */
+main {
+    width: 50vw;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2rem;
+}
+
+main h4 {
+    color: #164095;
+}
+
+textarea {
+    resize: none;
+}
+
+#invalid-title, #invalid-description, #invalid-date, #invalid-origin, #invalid-department, #invalid-severity {
+    display: none;
+    font-size: 0.8rem;
+    color: #c01405;
+}
+
+/* estiliza a tabela das não conformidades */
+section {
+    width: 50vw;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2rem;
+}
+
+table {
+    background-color: white;
+}
+
+section h4 {
+    color: #164095;
+}
+
+#th-title, #th-description, #th-date, #th-status {
+    color: #164095;
+}
+
+
+footer {
+    margin-top: 3.1rem;
+}
+
+.footer-main {
+    background-color: #979797;
+    width: 100%;
+    min-height: 5.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+#list-contacts {
+    position: absolute;
+    right: 1rem;
+}
+
+#container-direitos {
+    margin-top: 1rem;
+}
+
+.img-fluid {
+    width: 18px;
+    height: auto;
+}
+
+footer li {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8rem;
+    
+}
+
+footer p {
+    font-size: 0.8rem;
+    text-align: center;
+}
+

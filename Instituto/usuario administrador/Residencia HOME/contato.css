@@ -1,0 +1,209 @@
+/* Reset e estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #000000;
+}
+
+/* Header */
+header {
+    background-color: #164095;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.headerd img {
+    width: 100%;
+    max-width: 520px; /* Imagem adaptável */
+    border-radius: 50%;
+}
+
+/* Navegação */
+nav {
+    background-color: #979797;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Conteúdo Principal */
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.titulo {
+    background-color: #164095;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.titulo h1 {
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.titulo p {
+    font-size: 1.2em;
+}
+
+/* Formulário de Contato */
+.formulario-contato {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.formulario-contato h2 {
+    color: #164095;
+    margin-bottom: 20px;
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    display: block;
+    font-size: 14px;
+    color: #164095;
+    margin-bottom: 5px;
+}
+
+.campo input, 
+.campo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.campo textarea {
+    resize: none;
+}
+
+.button {
+    background-color: #164095;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #002b70;
+}
+
+/* Informações de Contato */
+.caixa-info {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.caixa-info h2 {
+    color: #164095;
+    margin-bottom: 20px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.info-item img {
+    width: 20px;
+    height: auto;
+}
+
+.info-item p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.info-item a {
+    color: #164095;
+    text-decoration: none;
+}
+
+.info-item a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #979797;
+    color: white;
+    font-size: 14px;
+    position: relative;
+    width: 100%;
+}
+
+footer a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    main {
+        width: 95%;
+    }
+
+    .titulo h1 {
+        font-size: 1.8em;
+    }
+
+    .titulo p {
+        font-size: 1em;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    .info-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

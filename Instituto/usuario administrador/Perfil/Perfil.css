@@ -1,0 +1,300 @@
+:root {
+    --cor-principal: #164095;
+    --cor-secundaria: #f5f5f5;
+    --cor-clara: #ffffff;
+    --cor-escura: #808080;
+    --cor-destaque: #3232CD;
+    --sombra-padrao: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    --sombra-hover: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    --fonte-padrao: Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte-padrao);
+}
+
+/* Header */
+header {
+    background-color: #164095;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.headerd img {
+    width: 100%;
+    max-width: 520px;
+    border-radius: 50%;
+}
+
+/* Navegação */
+nav {
+    background-color: #979797;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.perfil {
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Seção de Introdução */
+section {
+    text-align: center;
+    background-color: var(--cor-principal);
+    color: #fff;
+    font-weight: bold;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 1rem auto;
+    max-width: 800px;
+    box-shadow: var(--sombra-padrao);
+}
+
+section h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+section p {
+    font-size: 1rem;
+}
+
+/* Informações do Usuário */
+.Info {
+    display: flex;
+    align-items: center;
+    background-color: var(--cor-clara);
+    font-weight: bold;
+    color: var(--cor-escura);
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: var(--sombra-padrao);
+    max-width: 800px;
+    gap: 1rem;
+}
+
+.Info img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: var(--sombra-hover);
+}
+
+.Info p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Caixa de Informações do Usuário */
+.InformaçõesUsuario {
+    background-color: var(--cor-clara);
+    margin: 2rem auto;
+    padding: 1.5rem;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: var(--sombra-padrao);
+    max-width: 800px;
+}
+
+.InformaçõesUsuario h2 {
+    color: var(--cor-principal);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.InformaçõesUsuario p {
+    color: var(--cor-escura);
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    line-height: 1.5;
+}
+
+#editarPerfilBtn {
+    display: block;
+    margin: 1rem auto;
+    color: #fff;
+    background-color: var(--cor-principal);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#editarPerfilBtn:hover {
+    background-color: #1a5bb3;
+}
+
+/* Formulário de Edição */
+#editForm {
+    display: none;
+    background-color: var(--cor-secundaria);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: var(--sombra-hover);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 400px;
+    width: 90%;
+}
+
+#editForm input {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#editForm button {
+    padding: 0.8rem;
+    background-color: var(--cor-principal);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    width: 100%;
+    font-size: 1rem;
+}
+
+#editForm button:hover {
+    background-color: #1a5bb3;
+}
+
+/* Notificações */
+.Notificações {
+    background-color: var(--cor-clara);
+    margin: 2rem auto;
+    padding: 1.5rem;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: var(--sombra-padrao);
+    max-width: 800px;
+}
+
+.Notificações h2 {
+    color: var(--cor-principal);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.Notificações p {
+    color: var(--cor-escura);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.Notificações hr {
+    margin: 1rem 0;
+    border: none;
+    border-top: 1px solid var(--cor-escura);
+}
+
+#limparHistoricoBtn {
+    display: block;
+    margin: 1rem auto;
+    padding: 10px 20px;
+    background-color: var(--cor-principal);
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#limparHistoricoBtn:hover {
+    background-color: #1a5bb3;
+}
+
+/* Botão de Sair */
+.exit {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+.exit a img {
+    width: 40px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.exit a img:hover {
+    transform: scale(1.1);
+}
+
+/* Rodapé */
+footer {
+    background-color: #979797;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+    border-top: 1px solid var(--cor-escura);
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: var(--cor-secundaria);
+}
+
+footer p:hover {
+    color: var(--cor-principal);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    .Info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .InformaçõesUsuario,
+    .Notificações {
+        width: 90%;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+}
